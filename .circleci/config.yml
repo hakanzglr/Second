@@ -21,8 +21,7 @@ jobs:
           path: output
           
 workflows:
-  build-test-lint:
+  version: 2
+  build-and-test:
     jobs:
-      - swiftlint
-      - danger
       - build-and-test
